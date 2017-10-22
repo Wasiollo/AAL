@@ -21,16 +21,17 @@ public:
     Worker(const Worker& orig);
     virtual ~Worker();
     
-    char getSpec();
+    char * getSpec();
+    void setSpec(char, char);
     bool getStatus();
-    
+    void setSatus(bool status);
 
 private:
 
     char spec[2] ;
     bool status;
 
-		
+	
 
 };
 

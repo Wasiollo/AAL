@@ -16,8 +16,6 @@
 
 #include "Worker.h"
 
-using namespace std;
-
 /*
  * 
  */
@@ -29,6 +27,10 @@ int main(int argc, char** argv) {
 	}	
 
 	Worker tom('A','B') ;
+        tom.setSatus(true);
+        char * currentSpec = tom.getSpec();
+        std::cout << "Status toma " << tom.getStatus() << " spec " << 
+                currentSpec[0] << currentSpec[1] << std::endl;
     
     return 0;
 }
