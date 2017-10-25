@@ -14,7 +14,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Worker.h"
+
 
 /*
  * 
@@ -26,12 +26,7 @@ int main(int argc, char** argv) {
 		std::cout << " argv[" << i << "] = " << argv[i] << "\n" ; 		
 	}	
 
-	Worker tom('A','B') ;
-        tom.setSatus(true);
-        char * currentSpec = tom.getSpec();
-        std::cout << "Status toma " << tom.getStatus() << " spec " << 
-                currentSpec[0] << currentSpec[1] << std::endl;
-    
+        
     return 0;
 }
 
