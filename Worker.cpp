@@ -14,9 +14,13 @@
 #include "Worker.h"
 
 Worker::Worker() {
+    this->first = 'A';
+    this->second = 'B';
 }
 
 Worker::Worker(const Worker& orig) {
+    this->first = orig.first;
+    this->second = orig.second;
 }
 
 Worker::~Worker() {

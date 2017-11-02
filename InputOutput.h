@@ -17,7 +17,8 @@
 #include <string>
 #include <iostream>
 #include <vector>
-
+#include <list>
+ 
 class InputOutput {
 public:
     InputOutput();
@@ -25,6 +26,7 @@ public:
     virtual ~InputOutput();
     
     static std::vector<char> getInput();
+    static std::list<std::string> parseArguments(int argc, char* argv[]);
     
 private:
 

@@ -27,10 +27,12 @@ InputOutput::~InputOutput() {
 
 std::vector<char> InputOutput::getInput()
 {
+    std::string error = "Input ERROR : Letter not from scope";
+    
     std::vector<char> result;
     int i=0;
+    
     char c = getchar();
-    std::string error = "Input ERROR : Letter not from scope";
     while (c != '\n')
     {
         c = toupper(c);
@@ -42,4 +44,15 @@ std::vector<char> InputOutput::getInput()
         c = getchar();
     }
         return result;
+}
+
+std::list<std::string> InputOutput::parseArguments(int argc, char* argv[])
+{
+    std::list<std::string> result;
+    for (int i=0 ; i < argc ; i++)
+    {
+        result.push_back(argv[i]); 		
+    }	
+    return result;
+        
 }
