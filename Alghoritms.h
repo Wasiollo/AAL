@@ -22,7 +22,7 @@ public:
     Alghoritms(const Alghoritms& orig);
     virtual ~Alghoritms();
     
-    static void myAlghoritm(std::vector<char> buffer); // first designed Alghoritm
+    static void myAlghoritm(std::vector<char> buffer); // first designed Alghoritm still to add when there is no 4 on the end
 private:
 
 };

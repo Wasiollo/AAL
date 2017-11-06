@@ -65,22 +65,22 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/aal: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/aal ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Alghoritms.o: Alghoritms.cpp 
+${OBJECTDIR}/Alghoritms.o: Alghoritms.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Alghoritms.o Alghoritms.cpp
 
-${OBJECTDIR}/InputOutput.o: InputOutput.cpp 
+${OBJECTDIR}/InputOutput.o: InputOutput.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/InputOutput.o InputOutput.cpp
 
-${OBJECTDIR}/Worker.o: Worker.cpp 
+${OBJECTDIR}/Worker.o: Worker.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Worker.o Worker.cpp
 
-${OBJECTDIR}/main.o: main.cpp 
+${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -std=c++11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
@@ -91,7 +91,6 @@ ${OBJECTDIR}/main.o: main.cpp
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/aal
 
 # Subprojects
 .clean-subprojects:
