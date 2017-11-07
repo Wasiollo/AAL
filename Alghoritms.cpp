@@ -15,8 +15,10 @@ Alghoritms::Alghoritms(const Alghoritms& orig) {
 Alghoritms::~Alghoritms() {
 }
 
-void Alghoritms::myAlghoritm(std::vector<char> buffer)
+void Alghoritms::myAlghoritm(
+        std::vector<char> buffer) // still not implemented calling worker when next two letters to call are the same
 {
+    //TODO implement calling worker when next calling letters are the same
     Worker worker('A','B');
     int i,count;
     count = i = 0;
@@ -59,7 +61,7 @@ void Alghoritms::myAlghoritm(std::vector<char> buffer)
                         }
                     }
                     else{
-                        std::cout<< "nie ma 4 elementow na koniec"<<std::endl;
+                        //std::cout<< "nie ma 4 elementow na koniec"<<std::endl;
                         if((i+3)>buffer.size())
                         {
                             //std::cout << "2 elementy na koniec"<<std::endl;
@@ -68,7 +70,7 @@ void Alghoritms::myAlghoritm(std::vector<char> buffer)
                             i+=2;
                             break;
                         }
-                        std::cout <<buffer.at(i)<<buffer.at(i+1)<<buffer.at(i+2)<<std::endl;
+                        //std::cout <<buffer.at(i)<<buffer.at(i+1)<<buffer.at(i+2)<<std::endl;
                         if(worker.isMyLetter(buffer.at(i+2)))
                         {
                             count+=20;

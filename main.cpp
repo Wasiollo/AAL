@@ -14,9 +14,9 @@ int main(int argc, char** argv) {
     std::list<std::string> arguments = InputOutput::parseArguments(argc,argv);
 
     arguments.pop_front();
-    /*if(arguments.size()>=1) {
+    if (arguments.size() >= 1) {
         if (arguments.front() == "-m1") {
-      */      try {
+            try {
 
                 buffer = InputOutput::getInput();
 
@@ -28,19 +28,20 @@ int main(int argc, char** argv) {
                 std::cout << e << std::endl;
                 return -1;
             }
-        /*}
+        }
 
         if (arguments.front() == "-m2") {
 
-            std::string generatedData = Generator::generate();
+            std::string generatedData = Generator::generate(12, 5);
 
             buffer = InputOutput::getInput(generatedData);
 
+            Alghoritms::brutalAlgoritm(buffer);
             Alghoritms::myAlghoritm(buffer);
 
 
         }
-    }*/
+    }
 
 
     return 0;

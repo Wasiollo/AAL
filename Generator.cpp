@@ -28,5 +28,6 @@ std::string Generator::generate(int count , int seed){
         x+=65;
         result+=(char)x;
     }
+    std::cout << result;
     return result ;
 }
