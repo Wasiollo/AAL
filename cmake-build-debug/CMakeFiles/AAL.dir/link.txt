@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/AAL.dir/main.cpp.o CMakeFiles/AAL.dir/InputOutput.cpp.o CMakeFiles/AAL.dir/Generator.cpp.o CMakeFiles/AAL.dir/Alghoritms.cpp.o CMakeFiles/AAL.dir/Worker.cpp.o  -o AAL 

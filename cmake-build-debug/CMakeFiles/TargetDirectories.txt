@@ -1,0 +1,4 @@
+/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/Gen.dir
+/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir

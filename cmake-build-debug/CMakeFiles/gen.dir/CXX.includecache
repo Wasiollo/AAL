@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/Wasiollo/CLionProjects/AAL/Generator.cpp
+Generator.h
+/home/Wasiollo/CLionProjects/AAL/Generator.h
+iostream
+-
+
+/home/Wasiollo/CLionProjects/AAL/Generator.h
+string
+-
+
+/home/Wasiollo/CLionProjects/AAL/gen.cpp
+
