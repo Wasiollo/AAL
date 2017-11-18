@@ -15,8 +15,10 @@ public:
     Alghoritms(const Alghoritms& orig);
     virtual ~Alghoritms();
 
-    static void myAlghoritm(std::vector<char> ); // first designed Alghoritm still to add when there is no 4 on the end
-    static void brutalAlgoritm(std::vector<char>); // brutal alternative Alghoritm - works not so long for short queues
+    static int myAlghoritm(std::vector<char> ); // first designed Alghoritm still to add when there is no 4 on the end
+    static int brutalAlgoritm(std::vector<char>); // brutal alternative Alghoritm - works not so long for short queues
+    static int alternativeAlghoritm(std::vector<char>);
+
 private:
     static int fourTreeChange(std::vector<char>, int, Worker, char);
 
