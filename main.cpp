@@ -14,15 +14,16 @@ int main(int argc, char** argv) {
     std::list<std::string> arguments = InputOutput::parseArguments(argc,argv);
 
     arguments.pop_front();
-    /*
+
     if (arguments.size() >= 1) {
         if (arguments.front() == "-m1") {
             try {
 
                 buffer = InputOutput::getInput();
 
-                Alghoritms::brutalAlgoritm(buffer);
                 Alghoritms::alternativeAlghoritm(buffer);
+
+                Alghoritms::brutalAlgoritm(buffer);
 
             }
             catch (std::string e) {
@@ -34,32 +35,32 @@ int main(int argc, char** argv) {
         if (arguments.front() == "-m2") {
 
             //std::string generatedData = Generator::generate(12, time(NULL));
-*/
+
     int x, y, z, counter;
     counter = 0 ;
-    for(unsigned i = 0 ; i <10000 ; ++i) {
-
-        std::string generatedData = Generator::generate(12, time(NULL));
+    for(unsigned i = 0; i <100000 ; ++i) {
+        std::string generatedData = Generator::generate(12, i);
         buffer = InputOutput::getInput(generatedData);
 
         x = Alghoritms::alternativeAlghoritm(buffer);
         y = Alghoritms::brutalAlgoritm(buffer);
+        std::cout << "Test no: "<<i<<std::endl;
 
 
         if (x != y) {
-            z = Alghoritms::myAlghoritm(buffer);
+           // z = Alghoritms::myAlghoritm(buffer);
             std::cout << "error at i = " << i << "x , y ,z : " << x <<" "<< y <<" "<< z << " bufor : " ;
             ++counter;
             for(unsigned j = 0; j<buffer.size(); ++j)
                 std::cout << buffer.at(j);
-            if(z!=y)
-                break;
+            //if(z!=y)
+            break;
         }
 
     }
     std::cout << "Counter" << counter <<std::endl;
-        //}
-    //}
+        }
+    }
 
 
     return 0;

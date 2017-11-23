@@ -184,9 +184,10 @@ int Alghoritms::fourTreeChange(std::vector<char> buffer, int i, Worker worker, c
 int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
 
     Worker worker('A','B');
-    int i,count, no;
+    int i,count, no,j;
     char firstMyLetter, firstNotMyLetter;
     count = i = 0;
+    //j = 1;
     std::cout <<buffer.size();
     while (i<buffer.size())
     {
@@ -253,7 +254,11 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
         no = 0;
         i+=2;
         std::cout << "i = " << i <<std::endl;
+        std::cout << "iii"<<std::endl;
         if(i < buffer.size()) {
+            std::cout << "i < buffer.size()"<<std::endl;
+
+            std::cout << "buffer.at(i) "<<buffer.at(i)<<std::endl;
             while (buffer.at(i) == firstMyLetter) {
                 std::cout << "aktualna litera jest taka sama jak moja pierwsza litera" << std::endl;
                 //slee
@@ -273,7 +278,7 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
             break;
         }
 
-
+        std::cout<<"count+=no*5 ; no = " <<no<<std::endl;
         count += no*5;
 
         if(worker.isMyLetter(buffer.at(i)))
@@ -287,12 +292,45 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
             worker.callWorker(firstMyLetter, firstNotMyLetter);
         }
         else {
-            if (no == 0) {
-                std::cout << "worker zawolany inny przypadek - test, aktualna litera : " << buffer.at(i) << std::endl;
-                worker.callWorker(firstMyLetter, firstNotMyLetter);
-            } else {
-                std::cout << "worker nie zawolany inny przypadek - test, aktualna litera : " << buffer.at(i) << std::endl;
+            j = 1;
+            std::cout << "This letter is not my letter and its not firstNotMyLetter"<<std::endl;
+            std::cout <<"Buffer before choose"<<buffer.at(i)<<std::endl;
+            //std::cout <<"Next buffer : "<<buffer.at(i+1)<<std::endl;
+            std::cout <<"j = "<<j <<std::endl;
+
+           // sleep(1);
+            /*if(i+1>=buffer.size()) {
+                std::cout <<"alter Alghoritm count = "<<count <<std::endl ;
+                return count;
+            }*/
+            while (i+j<buffer.size()) {
+                //sleep(1);
+                std::cout <<buffer.at(i+j)<<std::endl;
+                if(buffer.at(i+j)==firstMyLetter) {
+                    ++j;
+                    continue;
+                }
+                if(buffer.at(i+j)==firstNotMyLetter) {
+                    std::cout << "worker zawolany inny przypadek ssss- test, aktualna litera : " << buffer.at(i)
+                              << std::endl;
+                    worker.callWorker(firstMyLetter, firstNotMyLetter);
+                    break;
+                }
+                if(!worker.isMyLetter(buffer.at(i+j))) {
+                    std::cout << "Worker nie wołamy, bo nast litera jest inna litera"<<std::endl;
+                    break;
+                }
+                if (worker.isMyLetter(buffer.at(i+1)) && buffer.at(i)!=firstMyLetter) {
+                    std::cout << "Worker nie zawołany, bo następna litera jest moją literą" << std::endl;
+                    break;
+                }
             }
+
+            /*if(i+j>=buffer.size()) {
+                count+=10+j*5;
+                std::cout <<"alter Alghoritm count = "<<count <<std::endl ;
+                return count;
+            }*/
         }
 
     }
