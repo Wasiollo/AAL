@@ -8,8 +8,8 @@
 
 int main(int argc, char** argv) {
 
-    std::string generatedData = Generator::generate(100000000, time(NULL));
-    std::cout <<generatedData <<std::endl;
+    std::string generatedData = Generator::generate(1000000, time(NULL));
+    std::cout << generatedData <<std::endl;
 
     return 0;
 }

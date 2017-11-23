@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
 
                 Alghoritms::alternativeAlghoritm(buffer);
 
-                Alghoritms::brutalAlgoritm(buffer);
+                //Alghoritms::brutalAlgoritm(buffer);
 
             }
             catch (std::string e) {
@@ -48,12 +48,8 @@ int main(int argc, char** argv) {
 
 
         if (x != y) {
-           // z = Alghoritms::myAlghoritm(buffer);
-            std::cout << "error at i = " << i << "x , y ,z : " << x <<" "<< y <<" "<< z << " bufor : " ;
-            ++counter;
-            for(unsigned j = 0; j<buffer.size(); ++j)
-                std::cout << buffer.at(j);
-            //if(z!=y)
+
+            std::cout << "error at i = " << i << "x , y ,z : " << x <<" "<< y <<std::endl;
             break;
         }
 
