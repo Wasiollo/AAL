@@ -48,6 +48,34 @@ Worker.h
 
 /home/Wasiollo/CLionProjects/AAL/Worker.h
 
+/home/Wasiollo/CLionProjects/AAL/cxxopts.hpp
+cstring
+-
+cctype
+-
+exception
+-
+iostream
+-
+map
+-
+memory
+-
+regex
+-
+sstream
+-
+string
+-
+unordered_map
+-
+unordered_set
+-
+vector
+-
+unicode/unistr.h
+-
+
 /home/Wasiollo/CLionProjects/AAL/main.cpp
 cstdlib
 -
@@ -61,4 +89,6 @@ Alghoritms.h
 /home/Wasiollo/CLionProjects/AAL/Alghoritms.h
 Generator.h
 /home/Wasiollo/CLionProjects/AAL/Generator.h
+cxxopts.hpp
+/home/Wasiollo/CLionProjects/AAL/cxxopts.hpp
 

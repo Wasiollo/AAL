@@ -18,5 +18,6 @@ CMakeFiles/AAL.dir/main.cpp.o: ../Alghoritms.h
 CMakeFiles/AAL.dir/main.cpp.o: ../Generator.h
 CMakeFiles/AAL.dir/main.cpp.o: ../InputOutput.h
 CMakeFiles/AAL.dir/main.cpp.o: ../Worker.h
+CMakeFiles/AAL.dir/main.cpp.o: ../cxxopts.hpp
 CMakeFiles/AAL.dir/main.cpp.o: ../main.cpp
 

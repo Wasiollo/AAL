@@ -146,6 +146,9 @@ int Alghoritms::fourTreeChange(std::vector<char> buffer, int i, Worker worker, c
 
 
     int count,countA,countB,countC,countD;
+
+    count = countA = countB = countC = countD = 0;
+
     while(i<buffer.size()){
         if (worker.isMyLetter(buffer.at(i))) {
             count += 5;
@@ -189,7 +192,7 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
     char firstMyLetter, firstNotMyLetter;
     count = i = 0;
     //j = 1;
-    std::cout <<buffer.size();
+    //std::cout <<buffer.size();
     while (i<buffer.size())
     {
         if(worker.isMyLetter(buffer.at(i)))
@@ -218,7 +221,7 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
                 {
                   //  std::cout << "same letters till the end "<<buffer.at(i-1) << std::endl;
                     count+=no*5;
-                    //std::cout <<std::endl<<"alter Alghoritm count = "<<count <<std::endl ;
+                    std::cout <<std::endl<<"alter Alghoritm count = "<<count <<std::endl ;
                     return count ;
                 }
             }

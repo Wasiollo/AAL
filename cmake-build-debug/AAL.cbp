@@ -151,6 +151,10 @@
 		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Worker.h">
 			<Option target="AAL"/>
 		</Unit>
+		<Unit filename="/home/Wasiollo/CLionProjects/AAL/cxxopts.hpp">
+			<Option target="Gen"/>
+			<Option target="AAL"/>
+		</Unit>
 		<Unit filename="/home/Wasiollo/CLionProjects/AAL/main.cpp">
 			<Option target="AAL"/>
 		</Unit>
