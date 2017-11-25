@@ -2,7 +2,6 @@
 #include <iostream>
 
 #include "InputOutput.h"
-#include "Worker.h"
 #include "Alghoritms.h"
 #include "Generator.h"
 #include "cxxopts.hpp"
