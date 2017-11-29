@@ -5,6 +5,9 @@
 #include "Alghoritms.h"
 #include "Generator.h"
 #include "cxxopts.hpp"
+#include <chrono>
+#include <ctime>
+#include <iomanip>
 
 void firstMode(){
     std::vector<char> buffer;
@@ -13,9 +16,9 @@ void firstMode(){
 
         buffer = InputOutput::getInput();
 
-        Alghoritms::alternativeAlghoritm(buffer);
+        std::cout << "Alternative alghoritm = " << Alghoritms::alternativeAlghoritm(buffer) << std::endl;
 
-        Alghoritms::brutalAlgoritm(buffer);
+        std::cout << "Brutal alghorim = " << Alghoritms::brutalAlgoritm(buffer) << std::endl ;
 
 
     }
@@ -32,18 +35,46 @@ void secondMode(int n, int d){
     std::string generatedData = Generator::generate(n,d);
     buffer = InputOutput::getInput(generatedData);
 
-    Alghoritms::alternativeAlghoritm(buffer);
-    Alghoritms::brutalAlgoritm(buffer);
+    std::cout << "Alternative alghoritm = " << Alghoritms::alternativeAlghoritm(buffer) << std::endl;
+    std::cout << "Brutal alghorim = " << Alghoritms::brutalAlgoritm(buffer) << std::endl ;
 }
 
-void thirdMode(int n,int s,int k,int r, int d){
-    std::cout << "Third mode still not implemented"<<std::endl;
+void thirdMode(int n,int s,int k,int r){
+    // k tyle różnych r tyle instancji s taki skok
+    double avgTime,c = 4.01/100000,tempTime = 0;
+    std::vector<double> results;
+    //std::cout << "Third mode is implemented, but I don't know how to end this stupid table "<<std::endl;
+    std::vector<char> buffer;
+    for(int i = 0 ; i<k ; ++i,n+=s) {
+        for(int j = 0 ; j<r ;j++) {
+            double d = i+j;
+            std::string generatedData = Generator::generate(n, d);
+            buffer = InputOutput::getInput(generatedData);
+            auto start = std::chrono::system_clock::now();
+            //Alghoritms::brutalAlgoritm(buffer);
+            Alghoritms::alternativeAlghoritm(buffer);
+
+            auto milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(
+                    std::chrono::system_clock::now() - start);
+            tempTime = milliseconds.count();
+            avgTime +=tempTime;
+        }
+
+        avgTime/=r;
+        results.push_back(avgTime);
+
+        std::cout.width(8);
+        std::cout << n << "\t";
+        std::cout << std::fixed << std::setprecision(3) << std::setw(8) << avgTime <<"\t" ;
+        std::cout << std::fixed << std::setprecision(6) << std::setw(8) << avgTime/(n*c) << std::endl;
+    }
+
 }
 
 int main(int argc, char** argv) {
 
     int m,n,k,s,r,d;
-    m = n = k = s = r = 0;
+    d = m = n = k = s = r = 0;
     d = time(NULL);
 
     try
@@ -139,7 +170,7 @@ int main(int argc, char** argv) {
             secondMode(n,d);
             break;
         case 3:
-            thirdMode(n,s,k,r,d);
+            thirdMode(n,s,k,r);
             break;
     }
 

@@ -137,7 +137,7 @@ int Alghoritms::brutalAlgoritm(std::vector<char> buffer) {
     countC = fourTreeChange(buffer,i,worker,'C');
     countD = fourTreeChange(buffer,i,worker,'D');
     minCount =std::min(std::min(std::min(countA,countB),countC),countD);
-    std::cout<<std::endl << "brutal count = " <<minCount<<std::endl;
+    //std::cout<<std::endl << "brutal count = " <<minCount<<std::endl;
     return minCount;
 }
 
@@ -221,7 +221,7 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
                 {
                   //  std::cout << "same letters till the end "<<buffer.at(i-1) << std::endl;
                     count+=no*5;
-                    std::cout <<std::endl<<"alter Alghoritm count = "<<count <<std::endl ;
+ //                   std::cout <<std::endl<<"alter Alghoritm count = "<<count <<std::endl ;
                     return count ;
                 }
             }
@@ -263,7 +263,7 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
                 if (i >= buffer.size()) {
                 //    std::cout << "litera jest taka sama do końca" << buffer.at(i-1) << std::endl;
                     count+=no*5;
-                    std::cout <<std::endl<<"alter Alghoritm count = "<<count <<std::endl ;
+//                    std::cout <<std::endl<<"alter Alghoritm count = "<<count <<std::endl ;
                     return count ;
                 }
             }
@@ -326,7 +326,7 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
         }
 
     }
-    std::cout <<"alter Alghoritm count = "<<count <<std::endl ;
+//    std::cout <<"alter Alghoritm count = "<<count <<std::endl ;
     return count;
 
 }
