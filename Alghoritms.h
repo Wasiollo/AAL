@@ -16,6 +16,7 @@ public:
 
 private:
     static int fourTreeChange(std::vector<char>, int, Worker, char);
+    static int min (int, int);
 
 };
 

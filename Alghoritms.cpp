@@ -7,6 +7,13 @@
 #include <iostream>
 
 
+int Alghoritms::min(int x, int y){
+    if (x<y)
+        return x;
+    else
+        return y;
+}
+
 int Alghoritms::brutalAlgoritm(std::vector<char> buffer) {
     Worker worker('A','B');
     int i = 0;
@@ -15,7 +22,7 @@ int Alghoritms::brutalAlgoritm(std::vector<char> buffer) {
     countB = fourTreeChange(buffer,i,worker,'B');
     countC = fourTreeChange(buffer,i,worker,'C');
     countD = fourTreeChange(buffer,i,worker,'D');
-    minCount =std::min(std::min(std::min(countA,countB),countC),countD);
+    minCount =min(min(min(countA,countB),countC),countD);
     return minCount;
 }
 
@@ -44,7 +51,7 @@ int Alghoritms::fourTreeChange(std::vector<char> buffer, int i, Worker worker, c
         countC = fourTreeChange(buffer,i, worker,'C');
         countD = fourTreeChange(buffer,i, worker,'D');
 
-        count+=std::min(std::min(std::min(countA,countB),countC),countD);
+        count+=min(min(min(countA,countB),countC),countD);
         return count;
     }
     return count;
