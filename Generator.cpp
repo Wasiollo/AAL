@@ -7,14 +7,6 @@
 #include <iostream>
 
 
-Generator::Generator() {
-}
-
-Generator::Generator(const Generator& orig) {
-}
-
-Generator::~Generator() {
-}
 
 
 std::string Generator::generate(int count , int seed){
@@ -28,6 +20,5 @@ std::string Generator::generate(int count , int seed){
         x+=65;
         result+=(char)x;
     }
-    //std::cout << "GENERATED : " << result << std::endl;
     return result ;
 }

@@ -10,13 +10,8 @@
 
 class Generator {
 public:
-    Generator();
-    Generator(const Generator& orig);
-    virtual ~Generator();
 
     static std::string generate(int = 10000, int = 4);
-
-private:
 
 };
 
