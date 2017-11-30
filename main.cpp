@@ -41,17 +41,22 @@ void secondMode(int n, int d){
 
 void thirdMode(int n,int s,int k,int r){
     // k tyle różnych r tyle instancji s taki skok
-    double avgTime,c = 4.01/100000,tempTime = 0;
+    double avgTime,c = 4.0/100000,tempTime = 0;
     std::vector<double> results;
-    //std::cout << "Third mode is implemented, but I don't know how to end this stupid table "<<std::endl;
     std::vector<char> buffer;
+
+    std::cout << " ________________________________"<<std::endl;
+    std::cout << "| ";
+    std::cout <<std::setw(8) << "n" << " | " ;
+    std::cout <<std::setw(8) << "t(n)" << " | ";
+    std::cout <<std::setw(8) << "q(n)" << " |" << std::endl;
     for(int i = 0 ; i<k ; ++i,n+=s) {
         for(int j = 0 ; j<r ;j++) {
             double d = i+j;
             std::string generatedData = Generator::generate(n, d);
             buffer = InputOutput::getInput(generatedData);
             auto start = std::chrono::system_clock::now();
-            //Alghoritms::brutalAlgoritm(buffer);
+
             Alghoritms::alternativeAlghoritm(buffer);
 
             auto milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(
@@ -63,10 +68,11 @@ void thirdMode(int n,int s,int k,int r){
         avgTime/=r;
         results.push_back(avgTime);
 
-        std::cout.width(8);
-        std::cout << n << "\t";
-        std::cout << std::fixed << std::setprecision(3) << std::setw(8) << avgTime <<"\t" ;
-        std::cout << std::fixed << std::setprecision(6) << std::setw(8) << avgTime/(n*c) << std::endl;
+
+        std::cout <<"| " ;
+        std::cout << std::setw(8) << n << " | ";
+        std::cout << std::fixed << std::setprecision(3) << std::setw(8) << avgTime <<" | " ;
+        std::cout << std::fixed << std::setprecision(6) << std::setw(8) << avgTime/(n*c) << " |"<< std::endl;
     }
 
 }

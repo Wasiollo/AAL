@@ -14,119 +14,6 @@ Alghoritms::Alghoritms(const Alghoritms& orig) {
 
 Alghoritms::~Alghoritms() {
 }
-/*
-int Alghoritms::myAlghoritm(
-        std::vector<char> buffer) // still not implemented calling worker when next two letters to call are the same
-{
-    //TODO implement calling worker when next calling letters are the same
-    Worker worker('A','B');
-    int i,count;
-    count = i = 0;
-    while (i<buffer.size())
-    {
-        if(worker.isMyLetter(buffer.at(i)))
-        {
-            //std::cout <<buffer.at(i)<<std::endl;
-            count+=5;
-            ++i;
-        }
-        else
-        {
-            if ((i+1)<buffer.size() ){
-                if(!worker.isMyLetter(buffer.at(i+1)))
-                {
-                    //std::cout <<buffer.at(i)<<buffer.at(i+1)<<std::endl;
-                    count+=15;
-                    while(buffer.at(i) == buffer.at(i+1))
-                    {
-                        ++i;
-                        count+=5;
-                        if(i>=buffer.size())
-                            return count ;
-                    }
-                    worker.callWorker(buffer.at(i), buffer.at(i+1));
-                    //std::cout<<"Wolam: "<<buffer.at(i)<<buffer.at(i+1)<< " gdy ii = " << i << " count  = " <<count <<std::endl ;
-                    i+=2;
-                }
-                else
-                {
-                    if((i+3)<buffer.size()){
-
-                        std::cout <<buffer.at(i)<<buffer.at(i+1)<<buffer.at(i+2)<<buffer.at(i+3)<<std::endl;
-                        if((worker.isMyLetter(buffer.at(i+2)) && worker.isMyLetter(buffer.at(i+3))))
-                        {
-                        //    std::cout <<buffer.at(i)<<buffer.at(i+1)<<buffer.at(i+2)<<buffer.at(i+3);
-                        //    std::cout << "nie wolam niczego"<<std::endl;
-                            count+=25;
-                            i+=4;
-                        }
-                        else
-                        {
-                            if((worker.isMyLetter(buffer.at(i+4)) && (worker.isMyLetter(buffer.at(i+2)) || worker.isMyLetter(buffer.at(i+3)))))
-                            {
-                                //std::cout <<buffer.at(i)<<buffer.at(i+1)<<buffer.at(i+2)<<buffer.at(i+3);
-                                //std::cout << "nie wolam niczego"<<std::endl;
-                                count+=30;
-                                i+=4;
-                            }
-                            else {
-                                count += 15;
-                                while (buffer.at(i) == buffer.at(i + 1)) {
-                                    ++i;
-                                    count += 5;
-                                    if(i>=buffer.size())
-                                        return count ;
-                                }
-                                worker.callWorker(buffer.at(i), buffer.at(i + 1));
-                                //std::cout << "Wolam: " << buffer.at(i) << buffer.at(i + 1) << " gdy i = " << i
-                                  //        << " count  = " << count << std::endl;
-                                i += 2;
-                            }
-                        }
-                    }
-                    else{
-                        std::cout<< "nie ma 4 elementow na koniec"<<std::endl;
-                        if((i+3)>buffer.size())
-                        {
-                           // std::cout << "2 elementy na koniec"<<std::endl;
-                            //std::cout<<buffer.at(i)<<buffer.at(i+1)<<std::endl;
-                            count+=15;
-                            i+=2;
-                            break;
-                        }
-                        //std::cout <<buffer.at(i)<<buffer.at(i+1)<<buffer.at(i+2)<<std::endl;
-                        if(worker.isMyLetter(buffer.at(i+2)))
-                        {
-                            count+=20;
-                            i+=3;
-                        }
-                        else if(buffer.at(i+2)==buffer.at(i))
-                        {
-                            count+=20;
-                            worker.callWorker(buffer.at(i), buffer.at(i+1));
-                            i+=3;
-                        }
-                        else
-                        {
-                            count+=25;
-                            i+=3;
-                        }
-                    }
-                }
-            }
-
-            else{
-                //std::cout << buffer.at(i)<<std::endl;
-                count+=10;
-                ++i;
-            }
-        }
-
-    }
-    std::cout <<"my Alghoritm count = "<<count <<std::endl ;
-    return count ;
-}
-*/
 
 int Alghoritms::brutalAlgoritm(std::vector<char> buffer) {
     Worker worker('A','B');
@@ -295,10 +182,6 @@ int Alghoritms::alternativeAlghoritm(std::vector<char> buffer) {
             //std::cout <<"j = "<<j <<std::endl;
 
            // sleep(1);
-            /*if(i+1>=buffer.size()) {
-                std::cout <<"alter Alghoritm count = "<<count <<std::endl ;
-                return count;
-            }*/
             while (i+j<buffer.size()) {
                 //sleep(1);
                 //std::cout <<buffer.at(i+j)<<std::endl;
