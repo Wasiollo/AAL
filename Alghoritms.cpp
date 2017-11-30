@@ -6,14 +6,6 @@
 
 #include <iostream>
 
-Alghoritms::Alghoritms() {
-}
-
-Alghoritms::Alghoritms(const Alghoritms& orig) {
-}
-
-Alghoritms::~Alghoritms() {
-}
 
 int Alghoritms::brutalAlgoritm(std::vector<char> buffer) {
     Worker worker('A','B');
