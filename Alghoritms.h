@@ -8,15 +8,23 @@
 
 #include <vector>
 #include "Worker.h"
-
 class Alghoritms {
 public:
+    Alghoritms();
+
     static int brutalAlgoritm(std::vector<char>); // brutal alternative Alghoritm - works not so long for short queues
+
     static int alternativeAlghoritm(std::vector<char>);
+
+    static bool isWorkerLetter(int i, char letter);
+
+    void dynamicProgramming(std::vector<char> buffer);
 
 private:
     static int fourTreeChange(std::vector<char>, int, Worker, char);
-    static int min (int, int);
+
+    static int min(int, int);
+
 
 };
 

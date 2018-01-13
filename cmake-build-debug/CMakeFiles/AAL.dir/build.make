@@ -177,13 +177,88 @@ CMakeFiles/AAL.dir/Worker.cpp.o.provides: CMakeFiles/AAL.dir/Worker.cpp.o.requir
 CMakeFiles/AAL.dir/Worker.cpp.o.provides.build: CMakeFiles/AAL.dir/Worker.cpp.o
 
 
+CMakeFiles/AAL.dir/Node.cpp.o: CMakeFiles/AAL.dir/flags.make
+CMakeFiles/AAL.dir/Node.cpp.o: ../Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AAL.dir/Node.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AAL.dir/Node.cpp.o -c /home/Wasiollo/CLionProjects/AAL/Node.cpp
+
+CMakeFiles/AAL.dir/Node.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AAL.dir/Node.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Wasiollo/CLionProjects/AAL/Node.cpp > CMakeFiles/AAL.dir/Node.cpp.i
+
+CMakeFiles/AAL.dir/Node.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AAL.dir/Node.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Wasiollo/CLionProjects/AAL/Node.cpp -o CMakeFiles/AAL.dir/Node.cpp.s
+
+CMakeFiles/AAL.dir/Node.cpp.o.requires:
+
+.PHONY : CMakeFiles/AAL.dir/Node.cpp.o.requires
+
+CMakeFiles/AAL.dir/Node.cpp.o.provides: CMakeFiles/AAL.dir/Node.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Node.cpp.o.provides.build
+.PHONY : CMakeFiles/AAL.dir/Node.cpp.o.provides
+
+CMakeFiles/AAL.dir/Node.cpp.o.provides.build: CMakeFiles/AAL.dir/Node.cpp.o
+
+
+CMakeFiles/AAL.dir/Edge.cpp.o: CMakeFiles/AAL.dir/flags.make
+CMakeFiles/AAL.dir/Edge.cpp.o: ../Edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/AAL.dir/Edge.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AAL.dir/Edge.cpp.o -c /home/Wasiollo/CLionProjects/AAL/Edge.cpp
+
+CMakeFiles/AAL.dir/Edge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AAL.dir/Edge.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Wasiollo/CLionProjects/AAL/Edge.cpp > CMakeFiles/AAL.dir/Edge.cpp.i
+
+CMakeFiles/AAL.dir/Edge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AAL.dir/Edge.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Wasiollo/CLionProjects/AAL/Edge.cpp -o CMakeFiles/AAL.dir/Edge.cpp.s
+
+CMakeFiles/AAL.dir/Edge.cpp.o.requires:
+
+.PHONY : CMakeFiles/AAL.dir/Edge.cpp.o.requires
+
+CMakeFiles/AAL.dir/Edge.cpp.o.provides: CMakeFiles/AAL.dir/Edge.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Edge.cpp.o.provides.build
+.PHONY : CMakeFiles/AAL.dir/Edge.cpp.o.provides
+
+CMakeFiles/AAL.dir/Edge.cpp.o.provides.build: CMakeFiles/AAL.dir/Edge.cpp.o
+
+
+CMakeFiles/AAL.dir/Graph.cpp.o: CMakeFiles/AAL.dir/flags.make
+CMakeFiles/AAL.dir/Graph.cpp.o: ../Graph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/AAL.dir/Graph.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/AAL.dir/Graph.cpp.o -c /home/Wasiollo/CLionProjects/AAL/Graph.cpp
+
+CMakeFiles/AAL.dir/Graph.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/AAL.dir/Graph.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/Wasiollo/CLionProjects/AAL/Graph.cpp > CMakeFiles/AAL.dir/Graph.cpp.i
+
+CMakeFiles/AAL.dir/Graph.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/AAL.dir/Graph.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/Wasiollo/CLionProjects/AAL/Graph.cpp -o CMakeFiles/AAL.dir/Graph.cpp.s
+
+CMakeFiles/AAL.dir/Graph.cpp.o.requires:
+
+.PHONY : CMakeFiles/AAL.dir/Graph.cpp.o.requires
+
+CMakeFiles/AAL.dir/Graph.cpp.o.provides: CMakeFiles/AAL.dir/Graph.cpp.o.requires
+	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Graph.cpp.o.provides.build
+.PHONY : CMakeFiles/AAL.dir/Graph.cpp.o.provides
+
+CMakeFiles/AAL.dir/Graph.cpp.o.provides.build: CMakeFiles/AAL.dir/Graph.cpp.o
+
+
 # Object files for target AAL
 AAL_OBJECTS = \
 "CMakeFiles/AAL.dir/main.cpp.o" \
 "CMakeFiles/AAL.dir/InputOutput.cpp.o" \
 "CMakeFiles/AAL.dir/Generator.cpp.o" \
 "CMakeFiles/AAL.dir/Alghoritms.cpp.o" \
-"CMakeFiles/AAL.dir/Worker.cpp.o"
+"CMakeFiles/AAL.dir/Worker.cpp.o" \
+"CMakeFiles/AAL.dir/Node.cpp.o" \
+"CMakeFiles/AAL.dir/Edge.cpp.o" \
+"CMakeFiles/AAL.dir/Graph.cpp.o"
 
 # External object files for target AAL
 AAL_EXTERNAL_OBJECTS =
@@ -193,9 +268,12 @@ AAL: CMakeFiles/AAL.dir/InputOutput.cpp.o
 AAL: CMakeFiles/AAL.dir/Generator.cpp.o
 AAL: CMakeFiles/AAL.dir/Alghoritms.cpp.o
 AAL: CMakeFiles/AAL.dir/Worker.cpp.o
+AAL: CMakeFiles/AAL.dir/Node.cpp.o
+AAL: CMakeFiles/AAL.dir/Edge.cpp.o
+AAL: CMakeFiles/AAL.dir/Graph.cpp.o
 AAL: CMakeFiles/AAL.dir/build.make
 AAL: CMakeFiles/AAL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable AAL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable AAL"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/AAL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -208,6 +286,9 @@ CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/InputOutput.cpp.o.requires
 CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/Generator.cpp.o.requires
 CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/Alghoritms.cpp.o.requires
 CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/Worker.cpp.o.requires
+CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/Node.cpp.o.requires
+CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/Edge.cpp.o.requires
+CMakeFiles/AAL.dir/requires: CMakeFiles/AAL.dir/Graph.cpp.o.requires
 
 .PHONY : CMakeFiles/AAL.dir/requires
 
