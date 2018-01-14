@@ -122,16 +122,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Alghoritms.cpp">
+		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Algorithms.cpp">
 			<Option target="AAL"/>
 		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Alghoritms.h">
-			<Option target="AAL"/>
-		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Edge.cpp">
-			<Option target="AAL"/>
-		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Edge.h">
+		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Algorithms.h">
 			<Option target="AAL"/>
 		</Unit>
 		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Gen.cpp">
@@ -145,22 +139,10 @@
 			<Option target="Gen"/>
 			<Option target="AAL"/>
 		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Graph.cpp">
-			<Option target="AAL"/>
-		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Graph.h">
-			<Option target="AAL"/>
-		</Unit>
 		<Unit filename="/home/Wasiollo/CLionProjects/AAL/InputOutput.cpp">
 			<Option target="AAL"/>
 		</Unit>
 		<Unit filename="/home/Wasiollo/CLionProjects/AAL/InputOutput.h">
-			<Option target="AAL"/>
-		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Node.cpp">
-			<Option target="AAL"/>
-		</Unit>
-		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Node.h">
 			<Option target="AAL"/>
 		</Unit>
 		<Unit filename="/home/Wasiollo/CLionProjects/AAL/Worker.cpp">

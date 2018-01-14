@@ -6,33 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/Wasiollo/CLionProjects/AAL/Alghoritms.cpp
-Alghoritms.h
-/home/Wasiollo/CLionProjects/AAL/Alghoritms.h
-iostream
+/home/Wasiollo/CLionProjects/AAL/Algorithms.cpp
+Algorithms.h
+/home/Wasiollo/CLionProjects/AAL/Algorithms.h
+
+/home/Wasiollo/CLionProjects/AAL/Algorithms.h
+vector
 -
 unordered_map
 -
-climits
--
-
-/home/Wasiollo/CLionProjects/AAL/Alghoritms.h
-vector
--
 Worker.h
 /home/Wasiollo/CLionProjects/AAL/Worker.h
-Node.h
-/home/Wasiollo/CLionProjects/AAL/Node.h
-Edge.h
-/home/Wasiollo/CLionProjects/AAL/Edge.h
-
-/home/Wasiollo/CLionProjects/AAL/Edge.cpp
-Edge.h
-/home/Wasiollo/CLionProjects/AAL/Edge.h
-
-/home/Wasiollo/CLionProjects/AAL/Edge.h
-Node.h
-/home/Wasiollo/CLionProjects/AAL/Node.h
 
 /home/Wasiollo/CLionProjects/AAL/Generator.cpp
 Generator.h
@@ -43,18 +27,6 @@ iostream
 /home/Wasiollo/CLionProjects/AAL/Generator.h
 string
 -
-
-/home/Wasiollo/CLionProjects/AAL/Graph.cpp
-Graph.h
-/home/Wasiollo/CLionProjects/AAL/Graph.h
-
-/home/Wasiollo/CLionProjects/AAL/Graph.h
-vector
--
-Node.h
-/home/Wasiollo/CLionProjects/AAL/Node.h
-Edge.h
-/home/Wasiollo/CLionProjects/AAL/Edge.h
 
 /home/Wasiollo/CLionProjects/AAL/InputOutput.cpp
 InputOutput.h
@@ -69,12 +41,6 @@ vector
 -
 list
 -
-
-/home/Wasiollo/CLionProjects/AAL/Node.cpp
-Node.h
-/home/Wasiollo/CLionProjects/AAL/Node.h
-
-/home/Wasiollo/CLionProjects/AAL/Node.h
 
 /home/Wasiollo/CLionProjects/AAL/Worker.cpp
 Worker.h
@@ -115,18 +81,16 @@ cstdlib
 -
 iostream
 -
+chrono
+-
+iomanip
+-
 InputOutput.h
 /home/Wasiollo/CLionProjects/AAL/InputOutput.h
-Alghoritms.h
-/home/Wasiollo/CLionProjects/AAL/Alghoritms.h
+Algorithms.h
+/home/Wasiollo/CLionProjects/AAL/Algorithms.h
 Generator.h
 /home/Wasiollo/CLionProjects/AAL/Generator.h
 cxxopts.hpp
 /home/Wasiollo/CLionProjects/AAL/cxxopts.hpp
-chrono
--
-ctime
--
-iomanip
--
 

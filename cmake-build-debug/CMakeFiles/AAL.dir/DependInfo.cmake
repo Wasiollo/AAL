@@ -4,12 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/Wasiollo/CLionProjects/AAL/Alghoritms.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Alghoritms.cpp.o"
-  "/home/Wasiollo/CLionProjects/AAL/Edge.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Edge.cpp.o"
+  "/home/Wasiollo/CLionProjects/AAL/Algorithms.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Algorithms.cpp.o"
   "/home/Wasiollo/CLionProjects/AAL/Generator.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Generator.cpp.o"
-  "/home/Wasiollo/CLionProjects/AAL/Graph.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Graph.cpp.o"
   "/home/Wasiollo/CLionProjects/AAL/InputOutput.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/InputOutput.cpp.o"
-  "/home/Wasiollo/CLionProjects/AAL/Node.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Node.cpp.o"
   "/home/Wasiollo/CLionProjects/AAL/Worker.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/Worker.cpp.o"
   "/home/Wasiollo/CLionProjects/AAL/main.cpp" "/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles/AAL.dir/main.cpp.o"
   )

@@ -7,18 +7,15 @@
 #include <iostream>
 
 
-
-
-std::string Generator::generate(int count , int seed){
+std::string Generator::generate(int count, int seed) {
     srand(seed);
     std::string result;
-    int x ;
+    int x;
     int n = count;
-    for(int i= 0; i<n; ++i)
-    {
-        x = std::rand()%4;
-        x+=65;
-        result+=(char)x;
+    for (int i = 0; i < n; ++i) {
+        x = std::rand() % 4;
+        x += 65;
+        result += (char) x;
     }
-    return result ;
+    return result;
 }

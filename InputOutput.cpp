@@ -5,21 +5,19 @@
 #include "InputOutput.h"
 
 
-std::vector<char> InputOutput::getInput()
-{
+std::vector<char> InputOutput::getInput() {
     std::string error = "Input ERROR : Letter not from scope";
 
     std::vector<char> result;
-    int i=0;
+    int i = 0;
 
     char c = getchar();
-    while (c != '\n')
-    {
+    while (c != '\n') {
         c = toupper(c);
-        if(c != 'A' && c !='B' && c != 'C' && c != 'D' && c != '\n')
+        if (c != 'A' && c != 'B' && c != 'C' && c != 'D' && c != '\n')
             throw error;
 
-        result.push_back(c) ;
+        result.push_back(c);
 
         c = getchar();
     }
@@ -29,8 +27,8 @@ std::vector<char> InputOutput::getInput()
 
 std::vector<char> InputOutput::getInput(std::string generated) {
     std::vector<char> result;
-    for(int i=0; i< generated.length(); ++i){
-        result.push_back(generated.at(i));
+    for (char i : generated) {
+        result.push_back(i);
     }
     return result;
 }

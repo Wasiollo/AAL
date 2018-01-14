@@ -13,10 +13,8 @@
 class InputOutput {
 public:
     static std::vector<char> getInput();
+
     static std::vector<char> getInput(std::string generated);
-
-
-
 };
 
 

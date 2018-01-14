@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/Wasiollo/CLionProjects/AAL/cmake-build-debug
 CMakeFiles/Gen.dir/all:
 	$(MAKE) -f CMakeFiles/Gen.dir/build.make CMakeFiles/Gen.dir/depend
 	$(MAKE) -f CMakeFiles/Gen.dir/build.make CMakeFiles/Gen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=10,11,12 "Built target Gen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=7,8,9 "Built target Gen"
 .PHONY : CMakeFiles/Gen.dir/all
 
 # Include target in all.
@@ -103,7 +103,7 @@ clean: CMakeFiles/Gen.dir/clean
 CMakeFiles/AAL.dir/all:
 	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/depend
 	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target AAL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target AAL"
 .PHONY : CMakeFiles/AAL.dir/all
 
 # Include target in all.
@@ -113,7 +113,7 @@ all: CMakeFiles/AAL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/AAL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/AAL.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/Wasiollo/CLionProjects/AAL/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/AAL.dir/rule

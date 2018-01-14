@@ -1,13 +1,13 @@
 #include <cstdlib>
 #include <iostream>
+#include <chrono>
+#include <iomanip>
 
 #include "InputOutput.h"
-#include "Alghoritms.h"
+#include "Algorithms.h"
 #include "Generator.h"
 #include "cxxopts.hpp"
-#include <chrono>
-#include <ctime>
-#include <iomanip>
+
 
 void firstMode() {
     std::vector<char> buffer;
@@ -15,16 +15,17 @@ void firstMode() {
     try {
 
         buffer = InputOutput::getInput();
-        std::cout << "bugfix";
 
-        Alghoritms alg;
-        std::cout << "Kupa" << std::endl;
-        alg.dynamicProgramming(buffer);
-        std::cout << "koniec kupy" << std::endl;
+        Algorithms alg;
 
-        std::cout << "Alternative alghoritm = " << Alghoritms::alternativeAlghoritm(buffer) << std::endl;
+        std::vector<int> ret;
+        ret.push_back(alg.dynamicProgramming(buffer));
+        ret.push_back(alg.alternativeAlgorithm(buffer));
+        ret.push_back(alg.brutalAlgorithm(buffer));
 
-        std::cout << "Brutal alghorim = " << Alghoritms::brutalAlgoritm(buffer) << std::endl;
+        std::cout << "Dynamic programming algorithm = " << ret[0] << std::endl;
+        std::cout << "Alternative algorithm = " << ret[0] << std::endl;
+        std::cout << "Brutal algorithm = " << ret[0] << std::endl;
 
 
     }
@@ -40,14 +41,21 @@ void secondMode(int n, int d) {
 
     std::string generatedData = Generator::generate(n, d);
     buffer = InputOutput::getInput(generatedData);
+    Algorithms alg;
+    std::vector<int> ret;
+    ret.push_back(alg.dynamicProgramming(buffer));
+    ret.push_back(alg.alternativeAlgorithm(buffer));
+    ret.push_back(alg.brutalAlgorithm(buffer));
 
-    std::cout << "Alternative alghoritm = " << Alghoritms::alternativeAlghoritm(buffer) << std::endl;
-    std::cout << "Brutal alghorim = " << Alghoritms::brutalAlgoritm(buffer) << std::endl;
+    std::cout << "Dynamic programming algorithm = " << ret[0] << std::endl;
+    std::cout << "Alternative algorithm = " << ret[0] << std::endl;
+    std::cout << "Brutal algorithm = " << ret[0] << std::endl;
 }
 
 void thirdMode(int n, int s, int k, int r) {
-    // k tyle różnych r tyle instancji s taki skok
-    double avgTime = 0, c = 4.0 / 100000, tempTime = 0;
+
+    Algorithms alg;
+    double avgTime = 0, c = 330 * 4.0 / 100000, tempTime = 0;
     std::vector<double> results;
     std::vector<char> buffer;
 
@@ -63,7 +71,7 @@ void thirdMode(int n, int s, int k, int r) {
             buffer = InputOutput::getInput(generatedData);
             auto start = std::chrono::system_clock::now();
 
-            Alghoritms::alternativeAlghoritm(buffer);
+            alg.dynamicProgramming(buffer);
 
             auto milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(
                     std::chrono::system_clock::now() - start);
@@ -170,6 +178,8 @@ int main(int argc, char **argv) {
             break;
         case 3:
             thirdMode(n, s, k, r);
+            break;
+        default:
             break;
     }
 

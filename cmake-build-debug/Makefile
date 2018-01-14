@@ -136,59 +136,32 @@ AAL/fast:
 	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/build
 .PHONY : AAL/fast
 
-Alghoritms.o: Alghoritms.cpp.o
+Algorithms.o: Algorithms.cpp.o
 
-.PHONY : Alghoritms.o
-
-# target to build an object file
-Alghoritms.cpp.o:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Alghoritms.cpp.o
-.PHONY : Alghoritms.cpp.o
-
-Alghoritms.i: Alghoritms.cpp.i
-
-.PHONY : Alghoritms.i
-
-# target to preprocess a source file
-Alghoritms.cpp.i:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Alghoritms.cpp.i
-.PHONY : Alghoritms.cpp.i
-
-Alghoritms.s: Alghoritms.cpp.s
-
-.PHONY : Alghoritms.s
-
-# target to generate assembly for a file
-Alghoritms.cpp.s:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Alghoritms.cpp.s
-.PHONY : Alghoritms.cpp.s
-
-Edge.o: Edge.cpp.o
-
-.PHONY : Edge.o
+.PHONY : Algorithms.o
 
 # target to build an object file
-Edge.cpp.o:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Edge.cpp.o
-.PHONY : Edge.cpp.o
+Algorithms.cpp.o:
+	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Algorithms.cpp.o
+.PHONY : Algorithms.cpp.o
 
-Edge.i: Edge.cpp.i
+Algorithms.i: Algorithms.cpp.i
 
-.PHONY : Edge.i
+.PHONY : Algorithms.i
 
 # target to preprocess a source file
-Edge.cpp.i:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Edge.cpp.i
-.PHONY : Edge.cpp.i
+Algorithms.cpp.i:
+	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Algorithms.cpp.i
+.PHONY : Algorithms.cpp.i
 
-Edge.s: Edge.cpp.s
+Algorithms.s: Algorithms.cpp.s
 
-.PHONY : Edge.s
+.PHONY : Algorithms.s
 
 # target to generate assembly for a file
-Edge.cpp.s:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Edge.cpp.s
-.PHONY : Edge.cpp.s
+Algorithms.cpp.s:
+	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Algorithms.cpp.s
+.PHONY : Algorithms.cpp.s
 
 Gen.o: Gen.cpp.o
 
@@ -247,33 +220,6 @@ Generator.cpp.s:
 	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Generator.cpp.s
 .PHONY : Generator.cpp.s
 
-Graph.o: Graph.cpp.o
-
-.PHONY : Graph.o
-
-# target to build an object file
-Graph.cpp.o:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Graph.cpp.o
-.PHONY : Graph.cpp.o
-
-Graph.i: Graph.cpp.i
-
-.PHONY : Graph.i
-
-# target to preprocess a source file
-Graph.cpp.i:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Graph.cpp.i
-.PHONY : Graph.cpp.i
-
-Graph.s: Graph.cpp.s
-
-.PHONY : Graph.s
-
-# target to generate assembly for a file
-Graph.cpp.s:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Graph.cpp.s
-.PHONY : Graph.cpp.s
-
 InputOutput.o: InputOutput.cpp.o
 
 .PHONY : InputOutput.o
@@ -300,33 +246,6 @@ InputOutput.s: InputOutput.cpp.s
 InputOutput.cpp.s:
 	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/InputOutput.cpp.s
 .PHONY : InputOutput.cpp.s
-
-Node.o: Node.cpp.o
-
-.PHONY : Node.o
-
-# target to build an object file
-Node.cpp.o:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Node.cpp.o
-.PHONY : Node.cpp.o
-
-Node.i: Node.cpp.i
-
-.PHONY : Node.i
-
-# target to preprocess a source file
-Node.cpp.i:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Node.cpp.i
-.PHONY : Node.cpp.i
-
-Node.s: Node.cpp.s
-
-.PHONY : Node.s
-
-# target to generate assembly for a file
-Node.cpp.s:
-	$(MAKE) -f CMakeFiles/AAL.dir/build.make CMakeFiles/AAL.dir/Node.cpp.s
-.PHONY : Node.cpp.s
 
 Worker.o: Worker.cpp.o
 
@@ -392,27 +311,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... Gen"
 	@echo "... AAL"
-	@echo "... Alghoritms.o"
-	@echo "... Alghoritms.i"
-	@echo "... Alghoritms.s"
-	@echo "... Edge.o"
-	@echo "... Edge.i"
-	@echo "... Edge.s"
+	@echo "... Algorithms.o"
+	@echo "... Algorithms.i"
+	@echo "... Algorithms.s"
 	@echo "... Gen.o"
 	@echo "... Gen.i"
 	@echo "... Gen.s"
 	@echo "... Generator.o"
 	@echo "... Generator.i"
 	@echo "... Generator.s"
-	@echo "... Graph.o"
-	@echo "... Graph.i"
-	@echo "... Graph.s"
 	@echo "... InputOutput.o"
 	@echo "... InputOutput.i"
 	@echo "... InputOutput.s"
-	@echo "... Node.o"
-	@echo "... Node.i"
-	@echo "... Node.s"
 	@echo "... Worker.o"
 	@echo "... Worker.i"
 	@echo "... Worker.s"

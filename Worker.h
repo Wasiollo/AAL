@@ -7,17 +7,22 @@
 
 
 class Worker {
-        public:
-        Worker();
-        Worker(char A, char B);
-        Worker(const Worker& orig);
-        virtual ~Worker();
+public:
+    Worker();
 
-        void callWorker(char A, char B);
-        bool isMyLetter(char other);
-        private:
-        char first;
-        char second;
+    Worker(char A, char B);
+
+    Worker(const Worker &orig);
+
+    virtual ~Worker();
+
+    void callWorker(char A, char B);
+
+    bool isMyLetter(char other);
+
+private:
+    char first;
+    char second;
 
 };
 
